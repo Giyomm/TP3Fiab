@@ -4,8 +4,8 @@ public class Soutenance {
 	
 	private int id;
 	private String titre;
-	private int id_etudiant;
-	private int id_plage;
+	private Etudiant etudiant;
+	private Plage plage;
 
 	public Soutenance() {}
 
@@ -25,20 +25,22 @@ public class Soutenance {
 		this.titre = titre;
 	}
 
-	public int getId_etudiant() {
-		return id_etudiant;
+	public Etudiant getEtudiant() {
+		return etudiant;
 	}
 
-	public void setId_etudiant(int id_etudiant) {
-		this.id_etudiant = id_etudiant;
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
 	}
 
-	public int getId_plage() {
-		return id_plage;
+	public Plage getPlage() {
+		return plage;
 	}
 
-	public void setId_plage(int id_plage) {
-		this.id_plage = id_plage;
+	public void setPlage(Plage plage) {
+		this.plage = plage;
 	}
+	
+	
 
 }
